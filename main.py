@@ -21,6 +21,7 @@ def init(ip_address):
 	global b
 	b = Bridge(ip_address)
 	b.connect
+	#print(b.get_group()) #Uncomment this if you need to know your room names
 
 #Execute this function when a key is pressed
 def on_press(key):
