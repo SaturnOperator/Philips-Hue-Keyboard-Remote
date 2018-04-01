@@ -107,16 +107,21 @@ def send(key):
 
 			elif(i == 'w'):
 				# Make the lights white
+
+				#This is the default 'white' color
+				white_hue = 8418
+				white_sat = 140
+
 				if(cmd[0] == 'r'):
 					b.set_group(rooms[cmd[1]], 'on', True)
 					b.set_group(rooms[cmd[1]], 'bri', 255)
-					b.set_group(rooms[cmd[1]], 'hue', 9427)
-					b.set_group(rooms[cmd[1]], 'sat', 41)
+					b.set_group(rooms[cmd[1]], 'hue', white_hue)
+					b.set_group(rooms[cmd[1]], 'sat', white_sat)
 				else:
 					b.set_light(cmd[1], 'on', True)
 					b.set_light(cmd[1], 'bri', 255)
-					b.set_light(cmd[1], 'hue', 9427)
-					b.set_light(cmd[1], 'sat', 41)
+					b.set_light(cmd[1], 'hue', white_hue)
+					b.set_light(cmd[1], 'sat', white_sat)
 			else:
 				# Change the values by taking inputs 0-9 (10%-100%) if input is a number
 				try:
