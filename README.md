@@ -4,10 +4,12 @@ Use any keyboard to control Philips Hue lights!
 
 This Python script listens to key presses and has the power to control any lights or rooms connected to your Philips Hue Bridge! The controls are very simple and no screen is required. 
 
+I have this script running on a Raspberry Pi that's paired to my Logitech K380 bluetooth keyboard, it's really convenient as I can easily switch to the profile to control the lights and works from anywhere in the house!
+
 ----------
 **Installation:**
 
-I'm using the [phue](https://github.com/studioimaginaire/phue) python library to easily control Philips Hue lights and [pynput](https://pypi.python.org/pypi/pynput) to detect keyboard key presses. You can install them using:
+The script is written for Python 3+. I'm using the [phue](https://github.com/studioimaginaire/phue) python library to easily control Philips Hue lights and [pynput](https://pypi.python.org/pypi/pynput) to detect keyboard key presses. You can install them using:
 
 ```
 pip install phue
